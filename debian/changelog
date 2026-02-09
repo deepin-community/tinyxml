@@ -1,8 +1,33 @@
-tinyxml (2.6.2-5deepin0) unstable; urgency=medium
+tinyxml (2.6.2-7) unstable; urgency=medium
 
-  * No source change upload against GCC 12.
+  * Fix passing -DTIXML_USE_STL to the build. (Closes: #1076929)
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Fri, 20 Sep 2024 12:20:07 +0800
+ -- Felix Geyer <fgeyer@debian.org>  Fri, 26 Jul 2024 17:29:19 +0200
+
+tinyxml (2.6.2-6.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database.
+
+  [ Felix Geyer ]
+  * Set Homepage to the SourceForge project since the original website
+    is offline.
+
+  [ Guilhem Moulin ]
+  * Fix CVE-2023-34194 / CVE-2023-40462: Reachable assertion (and application
+    exit) via a crafted XML document with a '\0' located after whitespace.
+    (Closes: #1059315)
+
+ -- Guilhem Moulin <guilhem@debian.org>  Sat, 30 Dec 2023 22:49:10 +0100
+
+tinyxml (2.6.2-6) unstable; urgency=medium
+
+  * Import fix for CVE-2021-42260.
+    - Add CVE-2021-42260.patch
+
+ -- Felix Geyer <fgeyer@debian.org>  Sun, 12 Dec 2021 23:53:05 +0100
 
 tinyxml (2.6.2-5) unstable; urgency=medium
 

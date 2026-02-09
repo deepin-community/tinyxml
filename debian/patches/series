@@ -1,2 +1,4 @@
 enforce-use-stl.patch
 entity-encoding.patch
+CVE-2021-42260.patch
+CVE-2023-34194.patch
