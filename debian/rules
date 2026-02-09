@@ -1,11 +1,11 @@
 #!/usr/bin/make -f
 
+DEB_CPPFLAGS_MAINT_APPEND = -DTIXML_USE_STL
+
 include /usr/share/dpkg/default.mk
 ifeq ($(origin CXX),default)
 CXX = $(DEB_HOST_GNU_TYPE)-g++
 endif
-
-CXXFLAGS += -DTIXML_USE_STL
 
 OBJ_FILES := tinyxml.o tinyxmlparser.o tinyxmlerror.o
 
